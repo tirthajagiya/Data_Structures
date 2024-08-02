@@ -1,4 +1,4 @@
-public class Lab_12 {
+public class Armstrong_number_from_1_to_1000 {
     public static void main(String[] args) {
       for(int i=1;i<=1000;i++){
       int a=i;

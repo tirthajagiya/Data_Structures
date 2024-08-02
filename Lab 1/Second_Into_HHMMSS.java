@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 import javax.swing.plaf.synth.SynthIcon;
 import javax.swing.plaf.synth.SynthViewportUI;
-public class Lab_9 {
+public class Second_Convert_HHMMSS {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter A Second:");
