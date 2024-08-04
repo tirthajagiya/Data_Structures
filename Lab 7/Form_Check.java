@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Lab_40 {
+public class Form_Check {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter a string:");

@@ -1,10 +1,13 @@
 public class circularLinkedList {
     public static void main(String[] args) {
         cll a=new cll();
-        a.insertAtFirst(10);
         a.insertAtFirst(20);
+        a.insertAtFirst(10);
         a.insertAtLast(30);
         a.insertAtLast(40);
+        a.insertAtOrder(5);
+        a.insertAtOrder(45);
+        a.insertAtOrder(50);
         a.deleteAtFirst();
         a.deleteAtLast();
         a.displayLinkedList();
@@ -47,6 +50,36 @@ class cll{
         last.link=newNode;
         newNode.link=first;
         last=newNode;
+    }
+
+    public void insertAtOrder(int elemant){
+        Node newNode =new Node(elemant);
+        if(first==null){
+            newNode.link=newNode;
+            first=last=newNode;
+            return;
+        }
+
+        if(first.info>=newNode.info){
+            last.link=newNode;
+            newNode.link=first;
+            first=newNode;
+            return;
+        }
+
+        Node save=first;
+
+        while(save!=last && (newNode.info>=save.link.info)){
+            save=save.link;
+        }
+
+        newNode.link=save.link;
+        save.link=newNode;
+
+        if(save==last){
+            last=newNode;
+            return;
+        }
     }
 
     public void deleteAtFirst(){

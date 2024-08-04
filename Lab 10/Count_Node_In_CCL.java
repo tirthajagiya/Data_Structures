@@ -35,7 +35,7 @@ class circulerLinkedList{
         }
 }
 
-public class Lab_58 {
+public class Count_Node_In_CCL {
     public static void main(String[] args) {
         circulerLinkedList stack=new circulerLinkedList();
         stack.insert(10);

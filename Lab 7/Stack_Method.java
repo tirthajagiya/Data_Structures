@@ -53,7 +53,7 @@ class StackImpl {
     }
 }
 
-public class Lab_38 {
+public class Stack_Method {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter A Size Of Stack:");

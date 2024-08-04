@@ -1,4 +1,4 @@
-public class Lab_59{
+public class Check_Equality{
     public static void main(String[] args) {
         LinkedList ls1=new LinkedList();
         LinkedList ls2=new LinkedList();
