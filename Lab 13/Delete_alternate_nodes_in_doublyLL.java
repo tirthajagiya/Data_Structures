@@ -109,7 +109,6 @@ class Doubly_LinkedList_Implemant {
         }
 
         System.out.println("Null");
-        System.out.println(first.info);
     }
 
     public void delete_alternate_nodes() {
@@ -125,15 +124,12 @@ class Doubly_LinkedList_Implemant {
         }
 
         Node temp = first;
-        Node prev = first;
+        Node save = first;
 
-        do {
-            prev = temp;
-            temp = temp.rptr;
-            temp.lptr.rptr = temp.rptr;
-            temp.rptr.lptr = temp.lptr;
-            temp = prev.rptr;
-        } while (temp != last && temp.rptr.rptr != null);
+        while (temp.rptr != null && temp.rptr.rptr!=null &&temp!=last) {
+            if(temp.rptr==null){
+                
+            }
+        }
     }
-
 }
