@@ -7,9 +7,9 @@ public class Polynomial_equations {
         p1.writeEqution(1, 1);
         p1.writeEqution(1,0);
 
-        p2.writeEqution(6, 1);
-        p2.writeEqution(-7, 2);
-        p2.writeEqution(2, 0);
+        p2.writeEqution(-1, 2);
+        p2.writeEqution(2, 1);
+        p2.writeEqution(-3, 0);
 
         Polynomial ans=p1.addEqu(p1, p2);
 
@@ -77,22 +77,21 @@ class Polynomial {
                 result.writeEqution(t1.coefficient+t2.coefficient, t1.exponent);
                 t1=t1.link;
                 t2=t2.link;
-            }
-            else if(t1.exponent>t2.exponent){
-                result.writeEqution(t1.coefficient, t1.exponent);
+            }else if(t1.exponent>t2.exponent){
+                result.writeEqution(t1.coefficient,t1.exponent);
                 t1=t1.link;
             }else{
-                result.writeEqution(t2.coefficient, t2.exponent);
+                result.writeEqution(t2.coefficient,t2.exponent);
                 t2=t2.link;
             }
         }
 
-        while (t1!=null) {
-            result.writeEqution(t1.coefficient, t2.exponent);
+        while(t1!=null){
+            result.writeEqution(t1.coefficient, t1.exponent);
             t1=t1.link;
         }
 
-        while (t2!=null) {
+        while(t2!=null){
             result.writeEqution(t2.coefficient, t2.exponent);
             t2=t2.link;
         }

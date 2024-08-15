@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.Stack;
 
 class postfix{
 
@@ -6,7 +7,7 @@ class postfix{
         Stack<Character> stack=new Stack<>();
         Scanner sc=new Scanner(System.in);
 
-        System.out.println("enter a string");
+        System.out.println("Enter a string");
         String infix =sc.next();
         infix+=')';
         stack.push('(');
@@ -106,7 +107,7 @@ class postfix{
     }
 }
 
-public class Lab_45{
+public class infix_to_postfix{
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         postfix objPostfix=new postfix();
